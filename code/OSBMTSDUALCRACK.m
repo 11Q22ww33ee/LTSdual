@@ -103,8 +103,8 @@ maxxc = crlength / 2.0d0;
 
 %Initialization of fail flag array
 %1 means no failure, 0 means failure of the PD bond
-fail=zeros(totnode,maxfam);
-fail2=zeros(totnode,maxfam);
+fail=ones(totnode,maxfam);
+fail2=ones(totnode,maxfam);
 % for i = 1:totnode
 % 	for  j = 1:maxfam
 % 		fail(i,j) = 1;
